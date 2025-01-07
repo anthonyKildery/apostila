@@ -1,0 +1,53 @@
+Faça Calculadora de Orçamento para apostilas:
+
+1 - O usuario irá fazer upload de um ou mais arquivos PDF
+2 - Calcular a quantidade de páginas de cada arquivo
+3 - Calcular a quantidade de páginas totais de todos os arquivos juntos
+4 - O usuario irá escolher as opções de impressão por meio de selects:
+    Escolha a cor do material:
+    - Preto e Branco: R$ 0,50 por página
+    - Colorido: R$ 1,00 por página
+
+    Escolha o tamanho do papel: 
+    - A4 (21x29,7cm): R$ 0,75 por página
+    - A5 (14x20cm): R$ 0,50 por página
+
+    Escolha o estilo de impressão:
+    - Frente e Verso: R$ 0,15 por página
+    - Somente Frente: R$ 0,25 por página
+
+    Escolha o tipo de encadernação:
+    - Folhas Soltas: R$ 0,00 por página
+    - Grampeadas: R$ 0,10 por página
+    - Encadernada: R$ 0,20 por página
+
+    Escolha o tipo de papel:
+    - Sulfite 75g: R$ 0,05 por página
+    - Sulfite 90g: R$ 0,10 por página
+
+5 - O usuario irá escolher a quantidade de impressões que deseja fazer
+6 - O sistema irá calcular o valor total da impressão com base nas escolhas do usuario
+
+
+
+<div class="section" style="display: none;">
+    <p id="file-info">{Nome do arquivo PDF}: {quantidadeDepaginas} págs</p>
+    <hr>
+    <p class="text-bold">Total: {totalDePagonasDeTodosOsArquivos} págs</p>
+</div>
+
+Adapite o código para quando o usuario fizer o upload dos arquivos PDFs mostre o nome do arquivo PDF e a quantidade de páginas de cada arquivo, e o total de páginas de todos os arquivos juntos.
+
+
+
+
+<div class="section section2">
+    <label for="quantidade">Escolha a quantidade de cópias:</label>
+    <input type="number" id="quantidade" value="1" min="1">
+</div>
+
+<div class="result">
+    Valor total do pedido: <span id="total-price">R$ 0,00</span>
+</div>
+
+Toda vez que o usuario colocar um número novo na caixa de texto, o valor total do pedido deve ser atualizado com base nas escolhas
